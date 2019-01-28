@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
-import './App.css';
-import './main.js';
+import '/App.css';
+import loginPage from './login'
 
 
 const App = () => (
   <BrowserRouter>
     <div>
-      <ul>
-        <li><Link to='/'>Home</Link></li>
+    <Link to='/'>Login</Link>
+      <ul className="mainMenu">
+        <li><Link to='home'>Home</Link></li>
         <li><Link to='/todo'>Todo</Link></li>
-        <li><Link to='/calendar'>calendar</Link></li>
-        <li><link to='/memo'>Memo</link></li>
+        <li><Link to='/calendar'>Calendar</Link></li>
+        <li><Link to='/memo'>Memo</Link></li>
       </ul>
 
       <hr />
-      <Route exact path='/' component={Home} />
+      <Route exact path='/' component={login} />
+      <Route path='/home' component={Home} />
       <Route path='/todo' component={todo} />
       <Route path='/calendar' component={calendar} />
       <Route path='/memo' component={memo} />
@@ -23,10 +25,17 @@ const App = () => (
   </BrowserRouter>
 )
 
+const login = () => (
+  <div>
+  {/* <loginPage /> */}
+  <h1>login</h1>
+  </div>
+)
+
 const Home = () => (
   <div>
     <h2>Home</h2>
-    <p>Welcome to ようこそ</p>
+    <p>トップページです</p>
   </div>
 )
 
@@ -50,25 +59,4 @@ const memo = () => (
   </div>
 )
 
-class master extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    }
-
-  };
-
-  render() {
-    return (
-      <div>
-       <main />
-
-      </div>
-    );
-  }
-
-
-
-}
-
-export default master;
+export default App;
