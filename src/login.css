@@ -1,12 +1,54 @@
 .mainPage {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  background-image: url("./img/backimg.jpg");
+  background-size:cover;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  text-shadow: 2px 2px 4px gray;
+  font-size: 40px;
 }
 
 .textForm {
-  width: 200px;
+  width: 100px;
+  text-shadow: 1px 1px 2px gray;
+  border: none;
+  background:  rgb(250,250,250,0.5);
+  border-bottom: solid 1px white;
 }
 .textForm:focus {
   box-shadow: 2px 2px 4px gray inset;
+  outline: none;
 }
 
+.loginBox {
+  display: inline-block;
+  margin: auto;
+  margin-top: 10%;
+  background-color: rgb(250,250,250,0.5);
+  width: 20%;
+  border-radius: 3px;
+}
+.subTitle {
+  text-shadow: 1px 1px 2px gray;
+}
+
+.buttonStyle {
+  border: solid 1px white;
+  margin: 10%;
+  padding: 8px 15px;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.buttonStyle:active {
+  box-shadow: 2px 2px 4px gray inset;
+  outline: none;
+}
+
+.buttonStyle:focus {
+  outline: none;
+}

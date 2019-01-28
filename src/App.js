@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
-import '/App.css';
+import './App.css';
 import loginPage from './login'
 
 
@@ -16,8 +16,8 @@ const App = () => (
       </ul>
 
       <hr />
-      <Route exact path='/' component={login} />
-      <Route path='/home' component={Home} />
+      <Route exact path='/' component={loginPage} />
+      <Route path='/home' component={home} />
       <Route path='/todo' component={todo} />
       <Route path='/calendar' component={calendar} />
       <Route path='/memo' component={memo} />
@@ -25,14 +25,8 @@ const App = () => (
   </BrowserRouter>
 )
 
-const login = () => (
-  <div>
-  {/* <loginPage /> */}
-  <h1>login</h1>
-  </div>
-)
 
-const Home = () => (
+const home = () => (
   <div>
     <h2>Home</h2>
     <p>トップページです</p>
