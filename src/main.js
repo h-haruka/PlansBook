@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './main.css';
 
-class main extends Compornent {
+class main extends Component {
 render() {
   return (
     <div className="mainPage">
@@ -10,3 +10,5 @@ render() {
   );
 }
 }
+
+export default main;
