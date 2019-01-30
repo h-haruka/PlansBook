@@ -7,8 +7,8 @@ class home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
-    }
+      todays: datefunc(),
+    };
     this.datefunc = this.datefunc.bind(this);
   }
 
@@ -40,7 +40,7 @@ class home extends Component {
       </header>
        
       <h2 className="userName">こんにちは、Userさん</h2>
-      <h3>{this.state.datefunc}</h3>
+      <h3>{this.state.todays}</h3>
       <br />
       <div className="scheduleArea">
       <h2 className="scheduleTitle">Todays Schedule</h2>

@@ -8,7 +8,6 @@ header {
 
 .userId {
   display: inline-block;
-  text-align: right;
 }
 .homeTitle {
   display: inline;
@@ -20,18 +19,23 @@ h3 {
 
 ul {
   text-align: center;
-  padding: 0;
+  padding-left: 0;
+  margin: 0 auto;
+  width: 80%;
 }
 
 li {
   list-style: none;
+  text-align: left;
 }
 
 .scheduleArea {
   display: inline-block;
   background-color: #B3FFFE;
+  padding: 15px;
 }
 
 .scheduleTitle {
-  margin: 0;
+  padding: 10px;
+  margin: 0 0 10px 0;
 }
