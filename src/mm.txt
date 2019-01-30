@@ -1,0 +1,7 @@
+<Link to='/'>Login</Link>
+<Link to='home'>Home</Link>
+<Link to='/todo'>Todo</Link>
+<Link to='/calendar'>Calendar</Link>
+<Link to='/memo'>Memo</Link>
+
+<div>Favorite Food: <FontAwesomeIcon icon="faEllipsisV" /></div>

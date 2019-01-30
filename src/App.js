@@ -1,21 +1,26 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import './App.css';
-import loginPage from './login'
-
+import loginPage from './login';
+import home from './home';
+import todo from './todo';
+import calendar from './calendar';
+import memo from './memo';
+import headerComponent from './header';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
+library.add(faEllipsisV)
 
 const App = () => (
   <BrowserRouter>
-    <div>
+    <div className="mainContents">
     <Link to='/'>Login</Link>
-      <ul className="mainMenu">
-        <li><Link to='home'>Home</Link></li>
-        <li><Link to='/todo'>Todo</Link></li>
-        <li><Link to='/calendar'>Calendar</Link></li>
-        <li><Link to='/memo'>Memo</Link></li>
-      </ul>
-
-      <hr />
+    <Link to='home'>Home</Link>
+    <Link to='/todo'>Todo</Link>
+    <Link to='/calendar'>Calendar</Link>
+    <Link to='/memo'>Memo</Link>
+        
       <Route exact path='/' component={loginPage} />
       <Route path='/home' component={home} />
       <Route path='/todo' component={todo} />
@@ -23,34 +28,6 @@ const App = () => (
       <Route path='/memo' component={memo} />
     </div>
   </BrowserRouter>
-)
-
-
-const home = () => (
-  <div>
-    <h2>Home</h2>
-    <p>トップページです</p>
-  </div>
-)
-
-const todo = () => (
-  <div>
-    <h2>Todo</h2>
-    <p>Todoの管理ができます</p>
-  </div>
-)
-const calendar = () => (
-  <div>
-    <h2>Calendar</h2>
-    <p>スケジュールの管理ができます</p>
-  </div>
-)
-
-const memo = () => (
-  <div>
-    <h2>Memo</h2>
-    <p>メモの管理ができます</p>
-  </div>
 )
 
 export default App;

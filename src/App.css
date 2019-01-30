@@ -1,3 +1,7 @@
 .mainMenu {
   list-style: none;
 }
+
+.mainContents {
+  height: 100%;
+}
