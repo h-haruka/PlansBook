@@ -5,3 +5,17 @@
 <Link to='/memo'>Memo</Link>
 
 <div>Favorite Food: <FontAwesomeIcon icon="faEllipsisV" /></div>
+
+ハンバーガーメニューのアイコン
+<span className="fas fa-ellipsis-v menuIcon"></span>
+アイコンのCSS
+.menuIcon {
+  font-size: 1.5em;
+  float: left;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 8px;
+  padding: 8px 15px;
+  border: solid 1px black;
+  border-radius: 15%;
+}

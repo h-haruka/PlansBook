@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './todo.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
 
 function List(props) {
   return (

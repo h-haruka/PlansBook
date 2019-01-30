@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import './home.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import './calendar.css';
 
 class calendar extends Component {
   render() {
     return (
       <div>
+        <header>
+          <h2 className="calendarTitle">Calendar</h2>
+        </header>
         <h1>スケジュールの管理ができます</h1>
       </div>
     );

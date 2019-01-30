@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './home.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core';
+import HeaderComponent from "./header";
 
 class home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      todays: datefunc(),
+      todays: this.datefunc(),
     };
     this.datefunc = this.datefunc.bind(this);
   }
@@ -20,13 +19,8 @@ class home extends Component {
   const month = date.getMonth()+1;
   const week = date.getDay();
   const day = date.getDate();
-
   const weeks= new Array("日","月","火","水","木","金","土");
-
-  const todaysDate = document.write(year+"年"+month+"月"+day+"日 "+weeks[week]+"曜日")
-  return (
-    todaysDate
-  );
+  return year+"年"+month+"月"+day+"日 "+weeks[week]+"曜日";
   }
 
   render() {
@@ -34,11 +28,8 @@ class home extends Component {
       <div className="homeScreen">
       {/* headerは実際には別コンポーネントで扱う */}
       <header>
-        <FontAwesomeIcon icon="faEllipsisV" className="menuIcon"/>
-        <h1 className="homeTitle">Home</h1>
-        <p className="userId">ID : User</p>
+      <HeaderComponent />
       </header>
-       
       <h2 className="userName">こんにちは、Userさん</h2>
       <h3>{this.state.todays}</h3>
       <br />

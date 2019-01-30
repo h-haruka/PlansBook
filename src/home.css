@@ -1,6 +1,7 @@
 .homeScreen {
   text-align: center;
 }
+
 header {
   background-color: skyblue;
   height: 50px;
@@ -9,9 +10,12 @@ header {
 .userId {
   display: inline-block;
 }
+
 .homeTitle {
   display: inline;
+  text-align: center;
 }
+
 h3 {
   display: inline-block;
   border-bottom: solid 1px black;
@@ -39,3 +43,6 @@ li {
   padding: 10px;
   margin: 0 0 10px 0;
 }
+
+
+

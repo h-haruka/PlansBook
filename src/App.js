@@ -6,11 +6,6 @@ import home from './home';
 import todo from './todo';
 import calendar from './calendar';
 import memo from './memo';
-import headerComponent from './header';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
-library.add(faEllipsisV)
 
 const App = () => (
   <BrowserRouter>

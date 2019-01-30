@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './memo.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
 
 class memo extends Component {
   render() {

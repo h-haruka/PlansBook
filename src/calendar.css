@@ -1,0 +1,11 @@
+header {
+  height: 50px;
+  background-color: skyblue;
+  text-align: center;
+}
+
+.calendarTitle {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
