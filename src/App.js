@@ -9,13 +9,7 @@ import memo from './memo';
 
 const App = () => (
   <BrowserRouter>
-    <div className="mainContents">
-    <Link to='/'>Login</Link>
-    <Link to='home'>Home</Link>
-    <Link to='/todo'>Todo</Link>
-    <Link to='/calendar'>Calendar</Link>
-    <Link to='/memo'>Memo</Link>
-        
+    <div className="mainContents">   
       <Route exact path='/' component={loginPage} />
       <Route path='/home' component={home} />
       <Route path='/todo' component={todo} />

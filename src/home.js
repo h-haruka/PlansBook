@@ -19,7 +19,7 @@ class home extends Component {
   const month = date.getMonth()+1;
   const week = date.getDay();
   const day = date.getDate();
-  const weeks= new Array("日","月","火","水","木","金","土");
+  const weeks= ["日","月","火","水","木","金","土"];
   return year+"年"+month+"月"+day+"日 "+weeks[week]+"曜日";
   }
 
@@ -31,7 +31,7 @@ class home extends Component {
       <HeaderComponent />
       </header>
       <h2 className="userName">こんにちは、Userさん</h2>
-      <h3>{this.state.todays}</h3>
+      <h3 className="datedisplay">{this.state.todays}</h3>
       <br />
       <div className="scheduleArea">
       <h2 className="scheduleTitle">Todays Schedule</h2>

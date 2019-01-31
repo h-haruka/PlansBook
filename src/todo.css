@@ -1,0 +1,24 @@
+.todoContents {
+  text-align: center;
+}
+
+.todoLiStyle {
+  width: 70%;
+  margin: 0 15%;
+  list-style: none;
+  text-align: left;
+  border-left: solid 6px skyblue;
+  border-bottom: solid 2px #dadada;
+  background: whitesmoke;
+  margin-bottom: 3px;
+}
+
+.todoUl {
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.todoAddButton {
+  border: none;
+  background: whitesmoke;
+}

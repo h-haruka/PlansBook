@@ -20,20 +20,24 @@ header {
   width: 30px;
   height: 22px;
   float: left;
-  
+  margin: 8px;
 }
 
 /*ハンバーガーアイコンをCSSだけで表現*/
 #nav-open span, #nav-open span:before, #nav-open span:after {
-  position: absolute;
-  height: 3px;/*線の太さ*/
-  width: 25px;/*長さ*/
-  border-radius: 3px;
-  background: #555;
-  display: block;
-  content: '';
   cursor: pointer;
+  padding: 4px 14px;
+  border: solid 1px black;
+  border-radius: 5px;
+  font-size: 1.3em;
 }
+
+#nav-open span:hover {
+  box-shadow: 1px 1px 2px gray inset;
+  text-shadow: 1px 1px 2px gray;
+  background-color: rgb(90, 181, 218);
+}
+
 #nav-open span:before {
   bottom: -8px;
 }
@@ -94,8 +98,28 @@ header {
 
 .menuContents:hover {
   color: skyblue;
+  text-shadow: 1px 1px 2px gray;
 }
 
 .navTitle {
-  height:50px;
+  height: 50px;
+}
+
+.logout {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 200px;
+}
+
+.logout:hover {
+  color: rgb(189, 128, 93);
+  cursor: pointer;
+}
+
+.siteTitle {
+  font-size: 30px;
+  margin-top:0;
+  margin-bottom: 120px;
+  padding-top: 50px;
+  text-shadow: 2px 2px 4px gray;
 }

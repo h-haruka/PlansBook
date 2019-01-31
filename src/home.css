@@ -16,7 +16,7 @@ header {
   text-align: center;
 }
 
-h3 {
+.datedisplay {
   display: inline-block;
   border-bottom: solid 1px black;
 }

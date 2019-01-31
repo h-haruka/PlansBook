@@ -1,7 +1,18 @@
 import React, { Component } from 'react';
 import './login.css';
+import { withRouter } from 'react-router';
 
 class loginPage extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+
+    };
+  
+  }
+  handleToAboutPage = () => {
+    this.props.history.push('/home')
+  }
 
   render() {
   return (
@@ -12,9 +23,7 @@ class loginPage extends Component {
       <br />
       <label>UserName : <input type="text" ref="name" className="textForm" /></label>
       <br />
-      <label>PassWord : <input type="text" ref="pass" className="textForm" /></label>
-      <br />
-      <input type="button" className="buttonStyle" value="Login" />
+      <input type="button" className="buttonStyle" value="Login" onClick={this.handleToAboutPage}/>
      </div>
     </div>
     );
@@ -22,4 +31,4 @@ class loginPage extends Component {
 }
 
 
-export default loginPage;
+export default withRouter(loginPage);

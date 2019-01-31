@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './calendar.css';
+import HeaderComponent from './header';
 
 class calendar extends Component {
   render() {
     return (
       <div>
         <header>
-          <h2 className="calendarTitle">Calendar</h2>
+          <HeaderComponent />
         </header>
         <h1>スケジュールの管理ができます</h1>
       </div>

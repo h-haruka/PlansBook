@@ -10,6 +10,8 @@
 .title {
   text-shadow: 2px 2px 4px gray;
   font-size: 40px;
+  padding-top: 80px;
+  margin: 0 auto;
 }
 
 .textForm {
